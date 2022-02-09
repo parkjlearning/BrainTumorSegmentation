@@ -15,6 +15,26 @@ Semantic image segmentation predicts class labels for each pixel in the image. I
 <a href="https://arxiv.org/pdf/1505.04597.pdf">U-Net</a> and <a href="https://arxiv.org/pdf/1611.09326.pdf">FC-DenseNets</a> architectures were trained and their performance was evaluated using various metrics (see below). The MRI data are collected/preprocessed by the BraTS community for 2020 <a href="https://www.med.upenn.edu/cbica/brats2020/data.html">BraTS</a> challenge.  
 
 ## Models
+<div align="center">
+<a href="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/Final_Report_Brain_tumor_segmentation_on_multimodal_MRI_scans_with_deep_learning.pdf">
+<img src="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/snapshots/Fig8_U-Net_architecture.png" style="width:850px;height:700px;"></a>
+<div align="left">
+U-Net comprises symmetrical downsampling, upsampling paths, and skip connections between them (Ronneberger et al., 2015).
+<div align="center">
+<a href="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/Final_Report_Brain_tumor_segmentation_on_multimodal_MRI_scans_with_deep_learning.pdf">
+<img src="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/snapshots/Fig12_FC-DenseNets_architecture.png" style="width:750px;height:700px;"></a>
+<div align="left">
+Fully-convolutional DenseNets also comprises downsampling (contracting) and upsampling (expanding) paths as well as the skip connections from the downsampling to the upsampling path. The downsampling path incorporated three dense blocks, in which all feature outputs are iteratively concatenated in a feedforward fashion to facilitate the feature reuse. 
+  
+## Model evaluation 
+<div align="center">
+<a href="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/Final_Report_Brain_tumor_segmentation_on_multimodal_MRI_scans_with_deep_learning.pdf">
+<img src="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/snapshots/Fig10_goundtruth_prediction.png" style="width:950px;height:700px;"></a>
+<div align="left">
+To assess model performance, we used the held out test set and visualized model predictions and ground truths in tandem for each class and observed that they largely overlapped.   
+  
+  
+
 
 
 ## Additional info. 
