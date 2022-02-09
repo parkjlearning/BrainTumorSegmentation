@@ -24,7 +24,7 @@ U-Net comprises symmetrical downsampling, upsampling paths, and skip connections
 <a href="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/Final_Report_Brain_tumor_segmentation_on_multimodal_MRI_scans_with_deep_learning.pdf">
 <img src="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/snapshots/Fig12_FC-DenseNets_architecture.png" style="width:750px;height:700px;"></a>
 <div align="left">
-Fully-convolutional DenseNets also comprises downsampling (contracting) and upsampling (expanding) paths as well as the skip connections from the downsampling to the upsampling path. The downsampling path incorporated three dense blocks, in which all feature outputs are iteratively concatenated in a feedforward fashion to facilitate the feature reuse. 
+Fully-convolutional DenseNets also comprises downsampling (contracting) and upsampling (expanding) paths as well as the skip connections from the downsampling to the upsampling path. The downsampling path incorporated three dense blocks, in which all feature outputs are iteratively concatenated in a feedforward fashion to facilitate the feature reuse (Jegou et al., 2016). 
   
 ## Model evaluation 
 <div align="center">
@@ -32,13 +32,16 @@ Fully-convolutional DenseNets also comprises downsampling (contracting) and upsa
 <img src="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/snapshots/Fig10_goundtruth_prediction.png" style="width:950px;height:700px;"></a>
 <div align="left">
 To assess model performance, we used the held out test set and visualized model predictions and ground truths in tandem for each class and observed that they largely overlapped.   
-  
-  
+<div align="center">
+<a href="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/Final_Report_Brain_tumor_segmentation_on_multimodal_MRI_scans_with_deep_learning.pdf">
+<img src="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/snapshots/Fig14_FC-DenseNets_metrics.png" style="width:950px;height:700px;"></a>
+<div align="left">
+We then quantified model performance using diverse metrics, and compared performance of the two models based on U-Net versus FC-DenseNets. With the current model configurations and dataset, the U-Net outperformed the more complex and deeper FC-DenseNets at least on the versions of the models we configured. Admittedly, there are many model parametric, hyper-parametric, and schematic (e.g. postprocessing) spaces we have not exhaustively explored that might improve model performance, which would be an important direction of future studies.
 
 
-
-## Additional info. 
-
+## Documentation
+:page_facing_up: Please find the final report of this project here: [Final report](https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/Final_Report_Brain_tumor_segmentation_on_multimodal_MRI_scans_with_deep_learning.pdf)  
+:computer: Please find the final presentation of this project here: [Final presentation](https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/brain_tumor_segmentation_with_U-Net_and_FC-DenseNets.pptx)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
