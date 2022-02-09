@@ -11,7 +11,8 @@ Semantic image segmentation predicts class labels for each pixel in the image. I
 <a href="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/Final_Report_Brain_tumor_segmentation_on_multimodal_MRI_scans_with_deep_learning.pdf">
 <img src="https://github.com/parkjlearning/BrainTumorSegmentation/blob/master/snapshots/Fig4_BraTS_annotations_structures.jpeg" style="width:900px;height:400px;"></a>
 <div align="left">
-<br> We build CNN-based models for pixel-by-pixel segmentation of brain tumor subregions [0: Not tumor, 1: Necrotic/Core, 2: Edema, 3: Enhancing core]. Two models with <a href=”https://arxiv.org/abs/1505.04597/”> U-Net </a> and FC-DenseNet architectures were trained and their performance was evaluated. 
+<br> We build CNN-based models for pixel-by-pixel segmentation of brain tumor subregions [0: Not tumor, 1: Necrotic/Core, 2: Edema, 3: Enhancing core]. Two models with 
+<a href="https://arxiv.org/pdf/1505.04597.pdf">U-Net</a> and <a href="https://arxiv.org/pdf/1611.09326.pdf">FC-DenseNets</a> architectures were trained and their performance was evaluated using various metrics (see below). The MRI data are collected/preprocessed by the BraTS community for 2020 <a href="https://www.med.upenn.edu/cbica/brats2020/data.html">BraTS</a> challenge.  
 
 ## Models
 
